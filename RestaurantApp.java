@@ -12,7 +12,7 @@ public class RestaurantApp {
         
         // Customer adds items to their order
         customer.addToOrder(pizza);  // Collaborating with MenuItem and Order
-        customer.addToOrder(burger);
+        customer.addToOrder(burger);	
         customer.addToOrder(soda);
         
         // Customer places the order
