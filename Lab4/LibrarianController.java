@@ -15,5 +15,23 @@ public class LibrarianController {
   public LibrarianController(Library library) {
     this.library = library;
   }
-
+  
+  public void addBookToLibrary(String title, String author) {
+	  this.library.addBook(title, author);
+  }
+  
+  public void addMemberToLibrary(String name) {
+	  this.library.createMember(name);
+  }
+  
+  
+  public void rentBook(String bookName, String memberName) {
+	  this.library.rentBook(bookName, memberName);
+	  
+  }
+  
+  public void returnBook(String bookName, String memberName) {
+	  this.library.returnBook(bookName, memberName);
+  }
+  
 }
