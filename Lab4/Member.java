@@ -11,9 +11,9 @@ public class Member {
   private String memberId;
   ArrayList<Book> borrowedBooks = new ArrayList<>();
 
-  public Member(String name, String memberId) {
+  public Member(String name) {
     this.name = name;
-    this.memberId = memberId;
+    
   }
 
   public void addBook(Book name) {
