@@ -27,9 +27,4 @@ public class Member {
   public String getName() {
     return name;
   }
-
-  // private borrowedbBooks TODO: implement collection of borrowed books
-
-  // TODO: implement functionality of Member class
-
 }
