@@ -46,10 +46,14 @@ public class Library {
 	
 	
 	public void rentBook(String title, String name) {
-		
 		getMemberByName(name).addBook(getBookByTitle(title));
 		
-	}	
+	}
+	public void returnBook(String title, String name) {
+		getMemberByName(name).returnBook(getBookByTitle(title));
+	}
+	
+	
 	public void removeMember(Member member) {
 		members.remove(member);
 	}
