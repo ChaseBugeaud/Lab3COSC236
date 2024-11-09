@@ -5,6 +5,10 @@ import java.util.ArrayList;
 public class Library {
 	
 	
+	
+	public Library() {
+		
+	}
 	private ArrayList<Book> catalog = new ArrayList<>();
 	private ArrayList<Member> members = new ArrayList<>();
 	
