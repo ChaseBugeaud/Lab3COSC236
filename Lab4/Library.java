@@ -16,6 +16,14 @@ public class Library {
 		Member member = new Member(name);
 		members.add(member);
 	}
+	public Member getMemberByName(String name) {
+		for (int i = 0; i < members.size(); i++) {
+			if (members.get(i).getName().equals(name)) {
+				return members.get(i);
+			}
+		}
+		return null;
+	}
 	
 	public void withdrawBook(Book book) {
 		catalog.remove(book);
