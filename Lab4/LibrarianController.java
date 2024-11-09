@@ -17,7 +17,7 @@ public class LibrarianController {
   }
   
   public void addBookToLibrary(String title, String author) {
-	  this.library.addBook(title, author);
+	  this.library.createBook(title, author);
   }
   
   public void addMemberToLibrary(String name) {
@@ -32,6 +32,15 @@ public class LibrarianController {
   
   public void returnBook(String bookName, String memberName) {
 	  this.library.returnBook(bookName, memberName);
+  }
+  
+  
+  public void showAllBooks() {
+	  library.showBooks();
+  }
+  
+  public void showAllMembers() {
+	  library.showMembers();  
   }
   
 }
