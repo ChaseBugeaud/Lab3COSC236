@@ -24,13 +24,36 @@ public class Library {
 		}
 		return null;
 	}
+	public Book getBookByTitle(String name) {
+		for (int i = 0; i < catalog.size(); i++) {
+			if (catalog.get(i).getTitle().equals(name)) {
+				return catalog.get(i);
+			}
+		}
+		return null;
+	}
 	
-	public void withdrawBook(Book book) {
-		catalog.remove(book);
+	public void showBooks() {
+		for(Book b : catalog) {
+			System.out.println(b.getTitle());
+		}
+	}
+	public void showMembers() {
+		for(Member m : members) {
+			System.out.println(m.getName());
+		}
+	}
+	
+	
+	public void rentBook(String title, String name) {
+		
+		getMemberByName(name).addBook(getBookByTitle(title));
+		
 	}	
 	public void removeMember(Member member) {
 		members.remove(member);
 	}
+	
 	
 	//  GRASP Principles: Creator, Controller
 	//	Manage the catalog of books and members.
