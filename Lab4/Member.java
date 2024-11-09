@@ -12,15 +12,16 @@ public class Member {
 
   public Member(String name) {
     this.name = name;
-
   }
 
   public void addBook(Book book) {
     borrowedBooks.add(book);
+    book.setIsAvailable(false);
   }
 
   public void returnBook(Book book) {
     borrowedBooks.remove(book);
+    book.setIsAvailable(true);
   }
 
   public String getName() {
