@@ -50,8 +50,11 @@ public class Library {
 	
 	
 	public void rentBook(String title, String name) {
-		getMemberByName(name).addBook(getBookByTitle(title));
-		
+		if(getBookByTitle(name).getIsAvailable() == false) {
+			System.out.println("book not avalible");
+		}else {
+			getMemberByName(name).addBook(getBookByTitle(title));
+		}
 	}
 	public void returnBook(String title, String name) {
 		getMemberByName(name).returnBook(getBookByTitle(title));
