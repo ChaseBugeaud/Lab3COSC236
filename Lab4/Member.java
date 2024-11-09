@@ -8,12 +8,10 @@ public class Member {
   // Can borrow and return books.
 
   private String name;
-  private String memberId;
   ArrayList<Book> borrowedBooks = new ArrayList<>();
 
   public Member(String name) {
     this.name = name;
-    
   }
 
   public void addBook(Book name) {
@@ -28,9 +26,6 @@ public class Member {
     return name;
   }
 
-  public String getMemberId() {
-    return memberId;
-  }
 
   // private borrowedbBooks TODO: implement collection of borrowed books
 
