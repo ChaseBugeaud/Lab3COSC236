@@ -6,10 +6,10 @@ public class LibrarianController {
   // Handles user requests like borrowing and returning books.
   // Delegates tasks to the appropriate objects.
 
-  Library library;
+  private Library library;
 
   public LibrarianController() {
-    Library library = new Library();
+    this.library = new Library();
   }
   
   public void addBookToLibrary(String title, String author) {
