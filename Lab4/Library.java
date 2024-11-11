@@ -1,4 +1,5 @@
 package Lab4;
+
 import java.util.ArrayList;
 
 public class Library {
@@ -100,7 +101,5 @@ public class Library {
   // Attributes:
   // private catalog (list of Book)
   // private members (list of Members)
-
-  // TODO: implement functionality of Member class
 
 }
