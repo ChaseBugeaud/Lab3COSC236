@@ -34,9 +34,4 @@ public class LibrarianController {
   public void showAllBooks() {
 	  library.showBooks();
   }
-  
-  public void showAllMembers() {
-	  library.showMembers();  
-  }
-  
 }
