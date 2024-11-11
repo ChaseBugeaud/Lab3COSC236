@@ -18,8 +18,12 @@ public class LibraryAppReal {
     controlla.addMemberToLibrary("Haniel");
     
     
-    controlla.getBookByName("My Diary");
+    controlla.getBookByTitle("My Diary");
     controlla.getMemberByName("Liam");
+    System.out.println("All books:");
+    controlla.showAllBooks();
+    System.out.println("All members:");
+    controlla.showAllMembers();
   }
 
 }

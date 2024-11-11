@@ -42,7 +42,7 @@ public class LibrarianController {
           System.out.println(name + " is not in the databse!");
       }
   }
-  public void getBookByName(String name) {
+  public void getBookByTitle(String name) {
       if(library.getBookByTitle(name)!= null) {
           System.out.println(name + " is in the library!");
       }else{

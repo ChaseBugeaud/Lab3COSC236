@@ -6,7 +6,6 @@ public class Library {
   public Library() {
 
   }
-
   private ArrayList<Book> catalog = new ArrayList<>();
   private ArrayList<Member> members = new ArrayList<>();
 
@@ -100,7 +99,5 @@ public class Library {
   // Attributes:
   // private catalog (list of Book)
   // private members (list of Members)
-
-  // TODO: implement functionality of Member class
 
 }
