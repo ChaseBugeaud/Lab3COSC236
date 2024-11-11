@@ -1,4 +1,3 @@
-package Lab4;
 
 import java.util.ArrayList;
 
@@ -15,7 +14,7 @@ public class Member {
   }
 
   public void addBook(Book book) {
-	  System.out.println(book.getTitle() + " has been rented");
+    System.out.println(book.getTitle() + " has been rented");
     borrowedBooks.add(book);
     book.setIsAvailable(false);
   }
